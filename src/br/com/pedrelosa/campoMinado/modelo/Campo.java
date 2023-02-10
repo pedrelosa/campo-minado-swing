@@ -12,11 +12,21 @@ public class Campo {
 	private boolean aberto;
 	private boolean marcado;
 	private List<Campo> vizinhos = new ArrayList<>();
+	private List<CampoObservador> observadores = new ArrayList<>();
 	
 	public Campo(int x, int y) {
 		this.x = x;
 		this.y = y;
 		
+	}
+	
+	public void registrarObservador(CampoObservador observador){
+		this.observadores.add(observador);
+	}
+	
+	public void notificarObservadores(CampoEvento evento){
+		this.observadores
+				.forEach(o -> o.eventoOcorreu(this, evento));
 	}
 	
 	public boolean adicionarVizinho(Campo vizinho) {
@@ -45,18 +55,25 @@ public class Campo {
 		if (! this.aberto) {
 			this.marcado = ! this.marcado;
 			
+			if (isMinado()){
+				notificarObservadores(CampoEvento.MARCAR);
+			}else {
+				notificarObservadores(CampoEvento.DESMARCAR);
+			}
+			
 		}
 	}
 	
 	
 	public void abrir() {
 		if (! this.aberto && ! this.marcado) {
-			this.aberto = true;
 			
 			if (this.minado) {
-				//TODO implementar nova versão
-				
+				notificarObservadores(CampoEvento.EXPLODIR);
+				return;
 			}
+			
+			setAberto(true);
 			
 			if (vizinhancaSegura()) {
 				this.vizinhos.forEach(Campo::abrir);
@@ -85,6 +102,11 @@ public class Campo {
 	
 	void setAberto(boolean aberto) {
 		this.aberto = aberto;
+		
+		if (isAberto()){
+			notificarObservadores(CampoEvento.ABRIR);
+		}
+		
 	}
 	
 	public boolean isAberto() {

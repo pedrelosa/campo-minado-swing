@@ -4,14 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1e8b6c7-3088-46f1-ac52-05585c846e6b" name="Changes" comment="">
+    <list default="true" id="a1e8b6c7-3088-46f1-ac52-05585c846e6b" name="Changes" comment="build: atualizando o arquivo de configuração do Intellij">
+      <change afterPath="$PROJECT_DIR$/src/br/com/pedrelosa/campoMinado/modelo/CampoEvento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/pedrelosa/campoMinado/modelo/CampoObservador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/pedrelosa/campoMinado/modelo/Campo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/pedrelosa/campoMinado/modelo/Campo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -22,19 +32,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/pedre/IdeaProjects/campo-minado-swing/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pedre/IdeaProjects/campo-minado-swing/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pedre\IdeaProjects\campo-minado-swing\src" />
@@ -48,8 +58,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676028616367</updated>
-      <workItem from="1676028617366" duration="2301000" />
+      <workItem from="1676028617366" duration="4238000" />
+      <workItem from="1676056582270" duration="760000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: adicionando os arquivos principais do ultimo projeto">
+      <created>1676031867364</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676031867364</updated>
+    </task>
+    <task id="LOCAL-00002" summary="revert: deletanto pasta desnecessária para o projeto">
+      <created>1676031922768</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676031922768</updated>
+    </task>
+    <task id="LOCAL-00003" summary="build: atualizando o arquivo de configuração do Intellij">
+      <created>1676032013881</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676032013881</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -67,6 +100,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="feat: adicionando os arquivos principais do ultimo projeto" />
+    <MESSAGE value="revert: deletanto pasta desnecessária para o projeto" />
+    <MESSAGE value="build: atualizando o arquivo de configuração do Intellij" />
+    <option name="LAST_COMMIT_MESSAGE" value="build: atualizando o arquivo de configuração do Intellij" />
   </component>
 </project>
