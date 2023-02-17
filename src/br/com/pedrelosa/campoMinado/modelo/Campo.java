@@ -38,7 +38,7 @@ public class Campo {
 		int deltaY = Math.abs(this.y - vizinho.y);
 		int deltaAll = deltaX + deltaY;
 		
-		if (deltaAll == 1 && ! diagonalIsDif) {
+		if (deltaAll == 1 && !diagonalIsDif) {
 			this.vizinhos.add(vizinho);
 			return true;
 		}
@@ -66,9 +66,9 @@ public class Campo {
 	
 	
 	public void abrir() {
-		if (! this.aberto && ! this.marcado) {
+		if (! this.isAberto() && ! this.isMarcado()) {
 			
-			if (this.minado) {
+			if (this.isMinado()) {
 				notificarObservadores(CampoEvento.EXPLODIR);
 				return;
 			}
@@ -129,14 +129,15 @@ public class Campo {
 		}
 	}
 	
-	long minasNaVizinhanca() {
-		return this.vizinhos.stream().filter(v -> v.minado).count();
+	public int minasNaVizinhanca() {
+		return (int) this.vizinhos.stream().filter(v -> v.minado).count();
 	}
 	
 	void reiniciar() {
 		this.aberto = false;
 		this.minado = false;
 		this.aberto = false;
+		notificarObservadores(CampoEvento.REINICIAR);
 	}
 	
 }
